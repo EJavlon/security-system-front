@@ -1,0 +1,12 @@
+.search-box{
+    z-index: 1;
+    margin: 1rem auto;   
+    max-width: 80%;          
+}
+
+@media only screen and (max-width:767px){
+    .search-box{
+        margin: 0.5rem auto;
+        max-width: 100%;
+    }
+}

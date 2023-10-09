@@ -1,0 +1,72 @@
+.signin-section {
+  min-height: calc(110vh - 5rem);
+  margin: 0;
+  padding: 5rem 0 0 0;
+  box-sizing: border-box;
+}
+.signin-section .container {
+  max-width: 65rem;
+  padding: 0 2.5rem;
+  margin: 0 auto;
+}
+.signin-section .container .signin-form {
+  height: calc(100vh - 10rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signin-section .container .signin-form .flex {
+  width: 50%;
+  min-height: 80%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3%;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.signin-section .container .signin-form .flex .title {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+.signin-section .container .signin-form .flex .button-group {
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.signin-section .container .signin-form .flex .form-input {
+  padding-bottom: 1rem;
+}
+.signin-section .container .signin-form .flex .loginOrSingUpBtn {
+  max-width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+.signin-section .container .signin-form .flex a {
+  display: inline-block;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 1rem auto;
+}
+.signin-section .container .signin-form .flex .loginOrSingUpBtn:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .signin-section .container .signin-form .flex {
+    width: 60%;
+    height: 90%;
+    border: none;
+    padding: 0 1rem;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .signin-section .container .signin-form .flex {
+    width: 100%;
+    height: 90%;
+    padding: 0 1rem;
+    margin: 0;
+  }
+}/*# sourceMappingURL=LoginAndSignUp.css.map */

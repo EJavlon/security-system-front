@@ -1,0 +1,189 @@
+.add-user-section{
+    margin-top: 5rem;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+
+    .container{
+        min-height: calc(100vh - 5rem);
+        max-width: 65rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0 2.5rem;
+        
+        .private-data{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 0;
+            width: 100%;
+            min-width: 100%;                                                                
+            border-radius: 12px 12px 12px 12px;
+            color: #24292f;
+            background: "#fff";
+            border: 1px solid "#24292f";
+            box-shadow: 0px 2px 24px #DAECFF;
+            margin: 1rem 0;        
+
+            .user-avatar{                
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+                
+                img{
+                    width: 8.125rem;
+                    height: 8.125rem;
+                    border-radius: 5%;
+                    margin-bottom: 0.5rem;                                
+                }
+            }
+
+            .row{
+                width: 50%;
+
+                input[type=text],input[type=date]{                    
+                    border: 1px solid #babdbf;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    color: #303233;
+                    display: inline-block;                    
+                    font-size: 1rem;
+                    height: 40px;
+                    line-height: 1.43;                                        
+                    padding: 0 12px;
+                    width: 100%;                            
+                    margin: 1rem 0;
+                }
+                input[type=text]:focus,input[type=date]:focus{
+                    outline: none;
+                    border-color: #1785e5;
+                }
+        
+                label{                           
+                    font-size: 1rem;                        
+                }
+            }                
+        }
+
+        .private-data-2{            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 0;
+            width: 100%;
+            min-width: 100%;                                                                
+            border-radius: 12px 12px 12px 12px;
+            color: #24292f;
+            background: "#fff";
+            border: 1px solid "#24292f";
+            box-shadow: 0px 2px 24px #DAECFF;
+            margin: 1rem 0;      
+            
+            h1{
+                margin-bottom: 2rem;
+            }
+    
+            .user-avatar{                
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+                
+                img{
+                    width: 8.125rem;
+                    height: 8.125rem;
+                    border-radius: 5%;
+                    margin-bottom: 0.5rem;                                
+                }
+            }
+
+            .row{
+                width: 75%;    
+                display: flex;   
+                align-items: center;                                                
+
+                input[type=text],input[type=date],input[type=email],input[type=tel],input[type=url]{                    
+                    border: 1px solid #babdbf;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    color: #303233;
+                    display: inline-block;                    
+                    font-size: 1rem;
+                    height: 2.5rem;
+                    line-height: 1.43;                                        
+                    padding: 0 12px;
+                    width: 100%;                            
+                    margin: 1rem 1rem;
+                }
+
+                .MuiInputBase-root,.MuiFormControl-root{
+                    width: 100%;
+                    display: inline-block;
+                    height: 2.5rem;
+                }
+                
+                input[type=text]:focus,input[type=date]:focus,input[type=email]:focus{
+                    outline: none;
+                    border-color: #1785e5;
+                }
+        
+                label{                           
+                    font-size: 1rem;                        
+                }
+
+                textarea{
+                    width: 100%;
+                    min-width: 100%;                                                
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    padding: 12px;
+                    border-radius: 12px 12px 0 12px;
+                    color: #24292f;
+                    background: "#fff";
+                    border: 1px solid "#24292f";
+                    box-shadow: 0px 2px 24px #DAECFF;
+                    margin: 1rem 0;                
+                }
+            }                   
+        }
+    } 
+}
+
+@media only screen and (max-width:575px){
+
+    .add-user-section .container{
+        padding: 0.5rem 1rem;
+    }
+
+    .add-user-section .container > .private-data,.private-data-2{        
+        // display: none;
+        .row{            
+            width: 70%;
+        }
+    }
+    // .container .private-data, .private-data-2{
+    //     width: 70%;
+    // }
+//    .add-user-section{
+//      .container{
+//         .private-data{
+//             .row{
+//                 width: 70%;
+//             }
+//          }
+
+//          .private-data-2{
+//             .row{
+//                 // display: none;
+//                 width: 70%;
+//             }
+//          }
+//      }
+//    }
+    
+}
